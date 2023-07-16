@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Оформление ЖД билета"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#068FB1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="ID"
+        android:paddingStart="14sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:background="#E1ECEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/departurePlaceIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Место прибытия"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idIn" />
+
+    <EditText
+        android:id="@+id/departureDateIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Время отправления"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departurePlaceIn" />
+    <EditText
+        android:id="@+id/arrivalPlaceIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Место прибытия"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departureDateIn" />
+
+    <EditText
+        android:id="@+id/arrivalDateIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Время отправления"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrivalPlaceIn" />
+
+
+    <TextView
+        android:id="@+id/costTIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#8FD892"
+        android:gravity="center_horizontal"
+        android:hint="Стоимость: "
+        android:paddingStart="14sp"
+        android:textColor="#1129A5"
+        android:textColorHint="#3362AF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrivalDateIn" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Передача данных"
+        android:textSize="16sp"
+        android:backgroundTint="#068FB1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costTIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
